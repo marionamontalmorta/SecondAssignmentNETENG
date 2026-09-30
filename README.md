@@ -8,4 +8,4 @@ Mariona Montal Morta
 
 Run: open in IntelliJ (JDK 17) and run `Main` in each package.
 
-Report: [docs/Interfaces_Report_Mariona_Montal.pdf](docs/Interfaces_Report_Mariona_Montal.pdf)
+Report: [documents/Interfaces_Report_Mariona_Montal.pdf](documents/Interfaces_Report_Mariona_Montal.pdf)
