@@ -1,0 +1,25 @@
+classDiagram
+    class Person {
+        -String name
+        -String surname
+        +Person(name, surname)
+        +getName() String
+        +getSurname() String
+        +print() void
+    }
+    class Sorter {
+        +sort(Person[] people) void
+        -isGreater(Person a, Person b) boolean
+    }
+    class Rectangle {
+        -double width
+        -double height
+        +Rectangle(width, height)
+        +area() double
+    }
+    class Main {
+        +main(String[] args)$ void
+    }
+    Sorter ..> Person : ordena
+    Main ..> Sorter : usa
+    Main ..> Person : crea

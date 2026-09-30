@@ -1,0 +1,28 @@
+classDiagram
+    class Sortable {
+        <<interface>>
+        +isGreaterThan(Sortable other) boolean
+    }
+    class Person {
+        -String name
+        -String surname
+        +print() void
+        +isGreaterThan(Sortable other) boolean
+    }
+    class Rectangle {
+        -double width
+        -double height
+        +area() double
+        +print() void
+        +isGreaterThan(Sortable other) boolean
+    }
+    class Sorter {
+        +sort(Sortable[] items) void
+    }
+    class Main {
+        +main(String[] args)$ void
+    }
+    Sortable <|.. Person
+    Sortable <|.. Rectangle
+    Sorter ..> Sortable : ordena
+    Main ..> Sorter : usa
