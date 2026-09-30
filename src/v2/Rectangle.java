@@ -18,8 +18,8 @@ public class Rectangle implements Sortable {
     }
 
     @Override
-    public boolean isGreaterThan(Sortable other) {
+    public boolean isBigger(Sortable other) {
         Rectangle o = (Rectangle) other;
-        return this.area() > o.area();
+        return o.area() > this.area();
     }
 }

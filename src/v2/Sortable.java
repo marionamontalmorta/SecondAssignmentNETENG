@@ -1,5 +1,6 @@
 package v2;
 
 public interface Sortable {
-    boolean isGreaterThan(Sortable other);
+    // true if "other" (second object) is bigger than this (first object) in sort order
+    boolean isBigger(Sortable other);
 }

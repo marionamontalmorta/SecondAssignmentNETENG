@@ -14,12 +14,12 @@ public class Person implements Sortable {
     }
 
     @Override
-    public boolean isGreaterThan(Sortable other) {
+    public boolean isBigger(Sortable other) {
         Person o = (Person) other;
-        int c = surname.compareTo(o.surname);
+        int c = o.surname.compareTo(surname);
         if (c != 0) {
             return c > 0;
         }
-        return name.compareTo(o.name) > 0;
+        return o.name.compareTo(name) > 0;
     }
 }
