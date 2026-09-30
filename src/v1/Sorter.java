@@ -2,7 +2,6 @@ package v1;
 
 public class Sorter {
 
-    // Bubble sort: ordena per cognom i, si coincideix, per nom
     public void sort(Person[] people) {
         int n = people.length;
         for (int i = 0; i < n - 1; i++) {
@@ -16,7 +15,6 @@ public class Sorter {
         }
     }
 
-    // true si a va després de b en l'ordre
     private boolean isGreater(Person a, Person b) {
         int c = a.getSurname().compareTo(b.getSurname());
         if (c != 0) {

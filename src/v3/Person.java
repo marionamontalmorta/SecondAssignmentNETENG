@@ -13,7 +13,6 @@ public class Person implements Comparable<Person> {
         System.out.println(name + " " + surname);
     }
 
-    // Negatiu: this va abans. Zero: iguals. Positiu: this va després.
     @Override
     public int compareTo(Person other) {
         int c = surname.compareTo(other.surname);

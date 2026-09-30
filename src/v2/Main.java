@@ -12,7 +12,7 @@ public class Main {
             new Person("Pau", "Vila")
         };
         sorter.sort(people);
-        System.out.println("Persones:");
+        System.out.println("Persons:");
         for (Person p : people) {
             p.print();
         }

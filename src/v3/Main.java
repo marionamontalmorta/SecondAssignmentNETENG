@@ -14,7 +14,7 @@ public class Main {
         people.add(new Person("Pau", "Vila"));
 
         Collections.sort(people);
-        System.out.println("Persones:");
+        System.out.println("Persons:");
         for (Person p : people) {
             p.print();
         }

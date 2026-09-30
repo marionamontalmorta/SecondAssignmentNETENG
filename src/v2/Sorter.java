@@ -2,7 +2,6 @@ package v2;
 
 public class Sorter {
 
-    // Ja no depèn de Person: accepta qualsevol array de Sortable
     public void sort(Sortable[] items) {
         int n = items.length;
         for (int i = 0; i < n - 1; i++) {
